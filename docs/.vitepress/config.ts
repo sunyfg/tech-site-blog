@@ -10,6 +10,10 @@ export default defineConfig({
   themeConfig: {
     // siteTitle: false,
     logo: "/assets/logo.svg",
+    footer: {
+      message: "Released under the MIT License.",
+      copyright: "Copyright © 2024-present YanFeng Sun",
+    },
     search: {
       provider: "local",
       options: {
