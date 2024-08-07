@@ -5,15 +5,15 @@ logo: /assets/logo.svg
 
 hero:
   name: "Tech Site"
-  text: "面向未来的全栈技术站"
-  tagline: My great project tagline
-  actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+  # text: "面向未来的全栈技术站"
+  # tagline: My great project tagline
+  # actions:
+  #   - theme: brand
+  #     text: Markdown Examples
+  #     link: /markdown-examples
+  #   - theme: alt
+  #     text: API Examples
+  #     link: /api-examples
 
 features:
   - title: Feature A

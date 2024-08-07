@@ -14,6 +14,6 @@ export const questionSidebar = {
         },
       ],
     },
-    { text: "React 常见问题", items: [] },
+    // { text: "React 常见问题", items: [] },
   ],
 };
