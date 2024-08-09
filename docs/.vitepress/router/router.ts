@@ -1,32 +1,41 @@
+import { linuxNav, linuxSidebar } from "./linux";
 import { vueNav, vueSidebar } from "./vue";
 import { reactNav, reactSidebar } from "./react";
 import { questionNav, questionSidebar } from "./question";
+import { flutterNav, flutterSidebar } from "./flutter";
+import { nodeNav, nodeSidebar } from "./node";
 
 export const nav = [
   // { text: "首页", link: "/" },
+  // 后端
   {
-    text: "前端",
+    text: "后端",
+    items: [
+      // { text: "NodeJS", link: "/node/" },
+      ...nodeNav,
+      // { text: "NestJS", link: "/markdown-examples" },
+      // { text: "Python", link: "/markdown-examples" },
+    ],
+  },
+  // 移动端
+  {
+    text: "移动端",
+    items: [
+      // { text: "React Native", link: "/markdown-examples" },
+      ...flutterNav,
+      // { text: "Android", link: "/markdown-examples" },
+      // { text: "IOS", link: "/markdown-examples" },
+    ],
+  },
+  {
+    text: "运维",
+    items: [...linuxNav],
+  },
+  {
+    text: "面试",
     items: [...vueNav, ...reactNav],
   },
-  // 后端
-  // {
-  //   text: "后端",
-  //   items: [
-  //     { text: "NodeJS", link: "/markdown-examples" },
-  //     { text: "NestJS", link: "/markdown-examples" },
-  //     { text: "Python", link: "/markdown-examples" },
-  //   ],
-  // },
-  // 移动端
-  // {
-  //   text: "移动端",
-  //   items: [
-  //     { text: "React Native", link: "/markdown-examples" },
-  //     { text: "Flutter", link: "/markdown-examples" },
-  //     { text: "Android", link: "/markdown-examples" },
-  //     { text: "IOS", link: "/markdown-examples" },
-  //   ],
-  // },
+
   // {
   //   text: "常见问题",
   //   items: [...questionNav],
@@ -58,4 +67,7 @@ export const sidebar = {
   ...vueSidebar,
   ...reactSidebar,
   ...questionSidebar,
+  ...linuxSidebar,
+  ...flutterSidebar,
+  ...nodeSidebar,
 };
