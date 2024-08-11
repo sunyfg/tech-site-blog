@@ -4,6 +4,7 @@ import { reactNav, reactSidebar } from "./react";
 import { questionNav, questionSidebar } from "./question";
 import { flutterNav, flutterSidebar } from "./flutter";
 import { nodeNav, nodeSidebar } from "./node";
+import { cssNav, cssSidebar } from "./css";
 
 export const nav = [
   // { text: "首页", link: "/" },
@@ -33,7 +34,7 @@ export const nav = [
   },
   {
     text: "面试",
-    items: [...vueNav, ...reactNav],
+    items: [...vueNav, ...reactNav, ...cssNav],
   },
 
   // {
@@ -70,4 +71,5 @@ export const sidebar = {
   ...linuxSidebar,
   ...flutterSidebar,
   ...nodeSidebar,
+  ...cssSidebar,
 };

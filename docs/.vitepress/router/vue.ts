@@ -16,6 +16,10 @@ export const vueSidebar = {
         },
         { text: "Vue2 和 Vue3 的区别", link: "/vue3/vue3-difference-vue2" },
         { text: "Vue 3 新特性", link: "/vue3/vue3-new-feature" },
+        {
+          text: "深入比较 Vue 和 React 的异同点?",
+          link: "/vue3/differences-between-vue-and-react",
+        },
         { text: "keep-alive 具体缓存的是什么?", link: "/vue3/vue-keep-alive" },
         { text: "什么是 LRU 缓存策略?", link: "/vue3/vue-lru" },
         { text: "前端错误日志自动上报?", link: "/vue3/vue-error-report" },

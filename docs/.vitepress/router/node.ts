@@ -4,6 +4,8 @@ export const nodeSidebar = {
   "/node/": [
     { text: "Node.js 简介", link: "/node/" },
     { text: "Node.js 架构", link: "/node/framework" },
+    { text: "Buffer 模块", link: "/node/buffer" },
+    { text: "Buffer 乱码问题", link: "/node/buffer-garble" },
     { text: "Node 如何实现高并发", link: "/node/high-concurrency" },
     { text: "cluster 模块是干什么用的?", link: "/node/cluster" },
     { text: "创建子进程的方法有哪些?", link: "/node/create-child-process" },
@@ -27,6 +29,13 @@ export const nodeSidebar = {
     {
       text: "Node.js 中的内存管理和垃圾回收机制是怎样的？",
       link: "/node/memory-management-and-garbage-collection",
+    },
+    {
+      text: "编码",
+      items: [
+        { text: "常见编码方式", link: "/node/encoding" },
+        { text: "UTF-8 编码", link: "/node/encoding-utf8" },
+      ],
     },
   ],
 };
