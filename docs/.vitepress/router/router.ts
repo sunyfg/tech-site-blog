@@ -5,6 +5,7 @@ import { questionNav, questionSidebar } from "./question";
 import { flutterNav, flutterSidebar } from "./flutter";
 import { nodeNav, nodeSidebar } from "./node";
 import { cssNav, cssSidebar } from "./css";
+import { dachangNav, dachangSidebar } from "./dachang";
 
 export const nav = [
   // { text: "首页", link: "/" },
@@ -35,6 +36,10 @@ export const nav = [
   {
     text: "面试",
     items: [...vueNav, ...reactNav, ...cssNav],
+  },
+  {
+    text: "大厂",
+    items: [...dachangNav],
   },
 
   // {
@@ -72,4 +77,5 @@ export const sidebar = {
   ...flutterSidebar,
   ...nodeSidebar,
   ...cssSidebar,
+  ...dachangSidebar,
 };
