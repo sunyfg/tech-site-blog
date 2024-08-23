@@ -6,9 +6,21 @@ import { flutterNav, flutterSidebar } from "./flutter";
 import { nodeNav, nodeSidebar } from "./node";
 import { cssNav, cssSidebar } from "./css";
 import { dachangNav, dachangSidebar } from "./dachang";
+import { typescriptNav, typescriptSidebar } from "./typescript";
+import { javascriptNav, javascriptSidebar } from "./javascript";
 
 export const nav = [
   // { text: "首页", link: "/" },
+  // 前端
+  {
+    text: "前端",
+    items: [
+      // { text: "NodeJS", link: "/node/" },
+      ...javascriptNav,
+      // { text: "NestJS", link: "/markdown-examples" },
+      // { text: "Python", link: "/markdown-examples" },
+    ],
+  },
   // 后端
   {
     text: "后端",
@@ -35,7 +47,7 @@ export const nav = [
   },
   {
     text: "面试",
-    items: [...vueNav, ...reactNav, ...cssNav],
+    items: [...vueNav, ...reactNav, ...cssNav, ...typescriptNav],
   },
   {
     text: "大厂",
@@ -52,13 +64,13 @@ export const nav = [
 
 export const sidebar = {
   "/": [
-    {
-      text: "Examples",
-      items: [
-        { text: "Markdown Examples", link: "/markdown-examples" },
-        { text: "Runtime API Examples", link: "/api-examples" },
-      ],
-    },
+    // {
+    //   text: "Examples",
+    //   items: [
+    //     { text: "Markdown Examples", link: "/markdown-examples" },
+    //     { text: "Runtime API Examples", link: "/api-examples" },
+    //   ],
+    // },
   ],
   "/guide/": [
     {
@@ -70,6 +82,7 @@ export const sidebar = {
       ],
     },
   ],
+  ...javascriptSidebar,
   ...vueSidebar,
   ...reactSidebar,
   ...questionSidebar,
@@ -78,4 +91,5 @@ export const sidebar = {
   ...nodeSidebar,
   ...cssSidebar,
   ...dachangSidebar,
+  ...typescriptSidebar,
 };
