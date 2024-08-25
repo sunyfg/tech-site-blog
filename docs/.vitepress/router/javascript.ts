@@ -14,5 +14,13 @@ export const javascriptSidebar = {
       text: "defer 和 async 区别",
       link: "/javascript/defer-and-async",
     },
+    {
+      text: "var、let 和 const 的区别",
+      link: "/javascript/var-let-const",
+    },
+    {
+      text: "数据类型",
+      link: "/javascript/data-type",
+    },
   ],
 };

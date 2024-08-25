@@ -8,6 +8,7 @@ import { cssNav, cssSidebar } from "./css";
 import { dachangNav, dachangSidebar } from "./dachang";
 import { typescriptNav, typescriptSidebar } from "./typescript";
 import { javascriptNav, javascriptSidebar } from "./javascript";
+import { reactnativeNav, reactnativeSidebar } from "./react-native";
 
 export const nav = [
   // { text: "首页", link: "/" },
@@ -37,6 +38,7 @@ export const nav = [
     items: [
       // { text: "React Native", link: "/markdown-examples" },
       ...flutterNav,
+      ...reactnativeNav,
       // { text: "Android", link: "/markdown-examples" },
       // { text: "IOS", link: "/markdown-examples" },
     ],
@@ -92,4 +94,5 @@ export const sidebar = {
   ...cssSidebar,
   ...dachangSidebar,
   ...typescriptSidebar,
+  ...reactnativeSidebar,
 };
