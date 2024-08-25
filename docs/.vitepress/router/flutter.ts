@@ -22,6 +22,14 @@ export const flutterSidebar = {
           ],
         },
         { text: "类型", link: "/flutter/dart/types" },
+        {
+          text: "消息机制",
+          link: "/flutter/dart/message-passing",
+        },
+        {
+          text: "并发编程",
+          link: "/flutter/dart/concurrency",
+        },
       ],
     },
     {
@@ -30,7 +38,36 @@ export const flutterSidebar = {
     },
     {
       text: "框架",
-      items: [],
+      items: [
+        {
+          text: "setState",
+          link: "/flutter/framework/setstate",
+        },
+        {
+          text: "key",
+          link: "/flutter/framework/key",
+        },
+        {
+          text: "生命周期",
+          link: "/flutter/framework/lifecycle",
+        },
+        {
+          text: "渲染原理",
+          link: "/flutter/framework/rendering",
+        },
+        {
+          text: "状态管理",
+          link: "/flutter/framework/state-management",
+        },
+        {
+          text: "事件循环",
+          link: "/flutter/framework/event-loop",
+        },
+        {
+          text: "性能优化",
+          link: "/flutter/framework/performance",
+        },
+      ],
     },
     {
       text: "混合开发",

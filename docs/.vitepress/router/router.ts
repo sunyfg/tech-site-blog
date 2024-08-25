@@ -49,7 +49,13 @@ export const nav = [
   },
   {
     text: "面试",
-    items: [...vueNav, ...reactNav, ...cssNav, ...typescriptNav],
+    items: [
+      ...vueNav,
+      ...reactNav,
+      ...cssNav,
+      ...typescriptNav,
+      ...questionNav,
+    ],
   },
   {
     text: "大厂",
