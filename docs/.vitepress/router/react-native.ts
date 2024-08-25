@@ -24,6 +24,34 @@ export const reactnativeSidebar = {
           text: "React Native 状态管理",
           link: "/react-native/state-management",
         },
+        {
+          text: "React Native 中使用 MobX",
+          link: "/react-native/mobx",
+        },
+        {
+          text: "MobX 数据流向",
+          link: "/react-native/mobx-data-flow",
+        },
+        {
+          text: "React Native 拆包优化",
+          link: "/react-native/unpack",
+        },
+        {
+          text: "React Native 生命周期",
+          link: "/react-native/lifecycle",
+        },
+        {
+          text: "React Native 热更新",
+          link: "/react-native/hot-update",
+        },
+        {
+          text: "Hermes 引擎",
+          link: "/react-native/hermes",
+        },
+        {
+          text: "React Native 调试",
+          link: "/react-native/debug",
+        },
       ],
     },
     // { text: "React 常见问题", items: [] },
