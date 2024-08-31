@@ -11,6 +11,14 @@ export const vueSidebar = {
           link: "/vue3/01.design-mode",
         },
         {
+          text: "Diff 算法",
+          link: "/vue3/diff",
+        },
+        {
+          text: "Vue 和 React Diff 算法区别",
+          link: "/vue3/vue-and-react-diff",
+        },
+        {
           text: "Vue 双向数据绑定是如何实现的",
           link: "/vue3/two-way-data-binding",
         },

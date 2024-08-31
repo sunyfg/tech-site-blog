@@ -8,6 +8,7 @@ export const reactSidebar = {
         { text: "简介", link: "/react/" },
         {
           text: "基础",
+          collapsed: false, // 是否折叠
           items: [
             { text: "什么是 React?", link: "/react/what-is-react" },
             { text: "请解释一下什么是 JSX?", link: "/react/react-jsx" },
@@ -60,7 +61,12 @@ export const reactSidebar = {
         },
         {
           text: "进阶",
+          collapsed: false,
           items: [
+            {
+              text: "Diff 算法",
+              link: "/react/diff",
+            },
             {
               text: "解释一下 Flux?",
               link: "/react/react-flux",

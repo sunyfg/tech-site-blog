@@ -1,6 +1,6 @@
 export const questionNav = [
-  { text: "Vue 常见问题", link: "/question/vue/" },
-  { text: "React 常见问题", link: "/question/react/" },
+  // { text: "Vue 常见问题", link: "/question/vue/" },
+  // { text: "React 常见问题", link: "/question/react/" },
   { text: "Flutter 面试题", link: "/flutter/question/get-position-size" },
 ];
 

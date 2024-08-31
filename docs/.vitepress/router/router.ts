@@ -9,6 +9,7 @@ import { dachangNav, dachangSidebar } from "./dachang";
 import { typescriptNav, typescriptSidebar } from "./typescript";
 import { javascriptNav, javascriptSidebar } from "./javascript";
 import { reactnativeNav, reactnativeSidebar } from "./react-native";
+import { webpackNav, webpackSidebar } from "./webpack";
 
 export const nav = [
   // { text: "首页", link: "/" },
@@ -18,6 +19,7 @@ export const nav = [
     items: [
       // { text: "NodeJS", link: "/node/" },
       ...javascriptNav,
+      ...webpackNav,
       // { text: "NestJS", link: "/markdown-examples" },
       // { text: "Python", link: "/markdown-examples" },
     ],
@@ -101,4 +103,5 @@ export const sidebar = {
   ...dachangSidebar,
   ...typescriptSidebar,
   ...reactnativeSidebar,
+  ...webpackSidebar,
 };
