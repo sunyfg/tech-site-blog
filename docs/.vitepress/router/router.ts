@@ -19,6 +19,7 @@ export const nav = [
     items: [
       // { text: "NodeJS", link: "/node/" },
       ...javascriptNav,
+      ...reactNav,
       ...webpackNav,
       // { text: "NestJS", link: "/markdown-examples" },
       // { text: "Python", link: "/markdown-examples" },

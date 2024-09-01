@@ -62,6 +62,14 @@ export const javascriptSidebar = {
       text: "async/await",
       link: "/javascript/async-await",
     },
+    {
+      text: "错误处理",
+      link: "/javascript/error-handling",
+    },
+    {
+      text: "模块化",
+      link: "/javascript/module",
+    },
 
     {
       text: "ES2016（ES7）",
