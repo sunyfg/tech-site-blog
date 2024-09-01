@@ -71,7 +71,16 @@ export const flutterSidebar = {
     },
     {
       text: "混合开发",
-      items: [],
+      items: [
+        {
+          text: "Platform Channels（平台通道）",
+          link: "/flutter/hybrid/platform-channels",
+        },
+        {
+          text: "Platform Views（平台视图）",
+          link: "/flutter/hybrid/platform-views",
+        },
+      ],
     },
     {
       text: "工具",
