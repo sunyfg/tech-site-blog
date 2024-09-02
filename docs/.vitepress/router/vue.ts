@@ -1,9 +1,8 @@
-import { text } from "stream/consumers";
-
-export const vueNav = [{ text: "Vue", link: "/vue/01.design-mode" }];
+export const vueNav = [{ text: "Vue", link: "/vue/" }];
 
 export const vueSidebar = {
   "/vue/": [
+    { text: "介绍", link: "/vue/" },
     {
       text: "基础",
       collapsed: false, // 是否可折叠
@@ -89,8 +88,8 @@ export const vueSidebar = {
       ],
     },
     {
-      text: "Vue",
-      // collapsed: true, // 是否可折叠
+      text: "面试题",
+      collapsed: false, // 是否可折叠
       items: [
         {
           text: "介绍一下 MVVM 模式，和 MVC 模式有什么区别？",
