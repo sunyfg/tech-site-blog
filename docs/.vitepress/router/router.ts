@@ -10,6 +10,7 @@ import { typescriptNav, typescriptSidebar } from "./typescript";
 import { javascriptNav, javascriptSidebar } from "./javascript";
 import { reactnativeNav, reactnativeSidebar } from "./react-native";
 import { webpackNav, webpackSidebar } from "./webpack";
+import { electronNav, electronSidebar } from "./electron";
 
 export const nav = [
   // { text: "首页", link: "/" },
@@ -22,6 +23,7 @@ export const nav = [
       ...vueNav,
       ...reactNav,
       ...webpackNav,
+      ...electronNav,
       // { text: "NestJS", link: "/markdown-examples" },
       // { text: "Python", link: "/markdown-examples" },
     ],
@@ -106,4 +108,5 @@ export const sidebar = {
   ...typescriptSidebar,
   ...reactnativeSidebar,
   ...webpackSidebar,
+  ...electronSidebar,
 };

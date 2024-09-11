@@ -5,7 +5,7 @@ logo: /assets/logo.svg
 
 hero:
   name: "Tech Site"
-  text: "前端未来新征程"
+  text: "大前端技术站"
   tagline: Tech Site 伴您踏上前端未来新征程，一同探索前沿技术，洞察行业趋势，为您的前端之路点亮明灯，开启无限可能。
   image:
     src: /assets/logo.png

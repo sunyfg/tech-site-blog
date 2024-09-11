@@ -70,7 +70,6 @@ export const javascriptSidebar = {
       text: "模块化",
       link: "/javascript/module",
     },
-
     {
       text: "ES2016（ES7）",
       collapsed: false, // 是否折叠
@@ -162,6 +161,64 @@ export const javascriptSidebar = {
         {
           text: "flat() 和 flatMap()",
           link: "/javascript/es9-flat-and-flatmap",
+        },
+      ],
+    },
+    {
+      text: "编程题",
+      collapsed: false, // 是否折叠
+      items: [
+        {
+          text: "防抖",
+          link: "/javascript/programme/debounce",
+        },
+        {
+          text: "节流",
+          link: "/javascript/programme/throttle",
+        },
+        {
+          text: "深拷贝",
+          link: "/javascript/programme/deep-copy",
+        },
+        {
+          text: "浅拷贝",
+          link: "/javascript/programme/shallow-copy",
+        },
+        {
+          text: "数组转换为树形结构",
+          link: "/javascript/programme/array-to-tree",
+        },
+        {
+          text: "树形结构转换为数组",
+          link: "/javascript/programme/tree-to-array",
+        },
+        {
+          text: "数组扁平化",
+          link: "/javascript/programme/flatten-array",
+        },
+        {
+          text: "数组去重",
+          link: "/javascript/programme/array-unique",
+        },
+        {
+          text: "数组乱序",
+          link: "/javascript/programme/array-shuffle",
+        },
+        {
+          text: "反转字符串",
+          link: "/javascript/programme/reverse-string",
+        },
+        {
+          text: "判断是否是回文字符串",
+          link: "/javascript/programme/palindrome-string",
+        },
+        {
+          text: "计算给定字符串中每个字符出现的次数",
+          link: "/javascript/programme/count-characters",
+        },
+        {
+          text: "判断一个数是否是素数",
+          link: "/javascript/programme/check-prime-number",
         },
       ],
     },
