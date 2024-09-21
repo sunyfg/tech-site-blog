@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button id="clickme">Click me</button>
+  <div id="div">
+    <p id="p">
+      <span id="span">Click me!</span>
+    </p>
+  </div>
+
+  <!-- <script>
+    // 事件绑定
+    const clickme = document.getElementById('clickme')
+    clickme.addEventListener('click', function () {
+      console.log('事件绑定 button click')
+    })
+
+    // 事件捕获
+    // 事件捕获是从上到下，事件冒泡是从下到上
+    // true 表示事件捕获，false 表示事件冒泡
+    clickme.addEventListener('click', function () {
+      console.log('4.button')
+    }, true)
+
+    document.addEventListener('click', function () {
+      console.log('3.document')
+    }, true)
+
+    document.body.addEventListener('click', function () {
+      console.log('2.body')
+    }, true)
+
+    window.addEventListener('click', function () {
+      console.log('事件捕获')
+      console.log('1.window')
+    }, true)
+
+    // 事件冒泡
+    clickme.addEventListener('click', function (e) {
+      console.log('事件冒泡')
+      console.log('1.button', e)
+    }, false)
+
+    document.body.onclick = function (e) {
+      console.log('2.body', e)
+    }
+
+    document.onclick = function (e) {
+      console.log('3.document', e)
+    }
+    window.onclick = function (e) {
+      console.log('4.window', e)
+    }
+
+    // 事件委托
+    // document.addEventListener('click', function (e) {
+    //   if (e.target && e.target.nodeName.toLowerCase() === 'button') {
+    //     console.log('click')
+    //   }
+    // })
+  </script> -->
+
+  <!-- <script>
+    const div = document.getElementById('div')
+    const p = document.getElementById('p')
+    const span = document.getElementById('span')
+
+    function onClickFn(event) {
+      var tagName = event.currentTarget.tagName;
+      var phase = event.eventPhase;
+      console.log(tagName, phase, event);
+    }
+
+    // 捕获阶段
+    div.addEventListener('click', onClickFn, true)
+    p.addEventListener('click', onClickFn, true)
+
+    span.addEventListener('click', onClickFn)
+
+    // 冒泡阶段
+    div.addEventListener('click', onClickFn, false)
+    p.addEventListener('click', onClickFn, false)
+  </script> -->
+
+  <!-- 事件委托 -->
+  <input type="button" name="" id="btn" value="add" />
+  <ul id="ul1">
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    <li>item 4</li>
+  </ul>
+  <script>
+    const ul = document.getElementById('ul1')
+    const btn = document.getElementById('btn')
+    ul.onclick = function (e) {
+      e = e || window.event
+      const target = e.target || e.srcElement
+      if (target.nodeName.toLowerCase() == 'li') {
+        console.log('the content is: ', target.innerHTML);
+      }
+    }
+    btn.onclick = function () {
+      const li = document.createElement('li')
+      li.innerHTML = 'item ' + (ul.children.length + 1)
+      ul.appendChild(li)
+    }
+
+  </script>
+
+
+</body>
+
+</html>
